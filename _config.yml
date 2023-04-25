@@ -6,11 +6,11 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
+title: Josh's blog
 description: An easy to use blogging platform with support for Jupyter Notebooks.
 github_username: JoshuaW03628
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "TestRepository1"
+github_repo: "Repository-1"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
@@ -34,13 +34,19 @@ url: "https://JoshuaW03628.github.io" # the base hostname & protocol for your si
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/TestRepository1" # the subpath of your site, e.g. "/blog".
+baseurl: "/Repository-1" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
+  #  social_links:
+  #    twitter: NighthawkCoding
+  #    github: nighthawkcoders
+  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
   social_links:
-    twitter: fastdotai
-    github: fastai
+    - { platform: github, user_url: "https://github.com/nighthawkcoders"}
+    - { platform: twitter, user_url: "https://twitter.com/NighthawkCoding"}
+    - { platform: youtube, user_url: "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q"}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -102,7 +108,6 @@ paginate: 15
 paginate_path: /page:num/
 
 remote_theme: jekyll/minima
-
 titles_from_headings:
   enabled:     true
   strip_title: true
